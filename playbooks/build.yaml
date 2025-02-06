@@ -5,9 +5,9 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: 66025010-NextJS:latest
+         name: 66025010-nextjs:latest
          source: build
          build:
-            path: ~/66025010-NextJS 
+            path: ~/66025010-nextjs 
          state: present
          force_source: true

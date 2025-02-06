@@ -5,8 +5,8 @@
   tasks:
     - name: Creating the Container
       docker_container:
-         name: 66025010-NextJS-container #docker container name
-         image: 66025010-NextJS:latest #docker image name
+         name: 66025010-nextjs-container #docker container name
+         image: 66025010-nextjs:latest #docker image name
          ports:
            - "1609:3000"
          state: started
