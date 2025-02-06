@@ -7,13 +7,13 @@ pipeline {
             }
         }
         
-        stage("Building Docker Image") {
+        stage("Build Docker Image") {
             steps {
 				ansiblePlaybook playbook: '/var/lib/jenkins/workspace/66025010-nextjs/playbooks/build.yaml'
             }    
         } 
         
-        stage("Create the Container") {
+        stage("Create Docker Container") {
             steps {
 				ansiblePlaybook playbook: '/var/lib/jenkins/workspace/66025010-nextjs/playbooks/deploy.yaml'
             }    
